@@ -1,0 +1,37 @@
+header {
+    font-family: "Instrument Serif";
+
+    height: 500px;
+
+    display: flex;
+    align-items: center;
+    // flex-direction: column; para ficar um embaixo do outro
+    // justify-content: center;
+    background-color: rgb(212, 171, 7);
+}
+
+main {
+    background-color: rgb(212, 171, 7);
+    color: beige;
+}
+
+.header-home {
+
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 8rem;
+
+    background-color: aqua;
+
+    h1 {
+        width: 500px;
+        font-size: 14vh;
+        // font-size: 14vw; // para celular
+    }
+
+    p {
+        font-size: 3vh;  
+    }
+
+}
