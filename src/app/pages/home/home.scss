@@ -1,17 +1,18 @@
 header {
     font-family: "Instrument Serif";
 
-    height: 500px;
+    height: 680px;
 
     display: flex;
     align-items: center;
     // flex-direction: column; para ficar um embaixo do outro
     // justify-content: center;
-    background-color: rgb(212, 171, 7);
+    background-color: #f4f5f5;
+    // background-color: beige;
 }
 
 main {
-    background-color: rgb(212, 171, 7);
+    
     color: beige;
 }
 
@@ -21,8 +22,6 @@ main {
     flex-direction: column;
 
     margin-left: 8rem;
-
-    background-color: aqua;
 
     h1 {
         width: 500px;
@@ -34,4 +33,141 @@ main {
         font-size: 3vh;  
     }
 
+}
+
+
+.card-wrapper {
+  font-family: 'Poppins', serif;
+  position: relative;
+  width: 320px;       /* Define a largura exata */
+  min-width: 320px;   /* Proíbe o cartão de encolher */
+  margin: 50px auto;
+}
+
+/* Estilo Base dos Selos (Badges) */
+.badge {
+  position: absolute;
+
+  background: rgba(188, 186, 186, 0.35); 
+  backdrop-filter: blur(10px); 
+  -webkit-backdrop-filter: blur(10px); /* Garante que funcione no Safari*/
+
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #222;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  z-index: 10;
+  white-space: nowrap; 
+}
+
+.badge-left {
+  top: 50%;
+  left: -50px; /* Reduzido para não vazar tanto */
+  transform: translateY(-50%);
+}
+
+.badge-right {
+  top: 15%;
+  right: -50px;
+}
+
+/* Estilo do Cartão Principal */
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+}
+
+.image-container {
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 320px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 16px 8px 8px 8px;
+}
+
+.name {
+  font-size: 1.50rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pronome {
+  font-size: 1.10rem;
+  font-weight: 400;
+  color: #b0b0b0;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 1.15rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.info-row.location {
+  color: #444;
+  font-weight: 600;
+  align-items: center;
+}
+
+.info-row.linkedin {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.info-row.linkedin svg {
+  transition: fill 0.3s ease;
+}
+
+.info-row.linkedin a {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Efeito Hover: Muda o ícone e o texto juntos */
+.info-row.linkedin:hover svg {
+  fill: #0077b5; /* Azul LinkedIn */
+}
+
+.info-row.linkedin:hover a {
+  color: #0077b5;
+  text-decoration: underline;
+}
+
+/* Responsividade básica para telas muito pequenas */
+@media (max-width: 480px) {
+  .badge-left {
+    left: -20px;
+    font-size: 0.9rem;
+  }
+  .badge-right {
+    right: -20px;
+    font-size: 0.9rem;
+  }
 }

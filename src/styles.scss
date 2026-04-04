@@ -24,8 +24,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // font-family: "Instrument Serif", "Poppins", sans-serif;
-
-    overflow-x: hidden; // não transborde
+    // font-family: "Instrument Serif", "Poppins", sans-serif; 
 }
 
+body {
+    overflow-x: hidden; // não transborde
+}
