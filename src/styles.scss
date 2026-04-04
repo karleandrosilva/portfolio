@@ -30,3 +30,17 @@
 body {
     overflow-x: hidden; // não transborde
 }
+
+header {
+  font-family: 'Instrument Serif';
+
+  height: 680px;
+
+  display: flex;
+  align-items: center;
+  // flex-direction: column; // para ficar um embaixo do outro
+  // justify-content: center;
+
+  background-color: #f4f5f4;
+  // background-color: beige;
+}
