@@ -1,26 +1,28 @@
-<div class="menu-drop-zone"  #menuDropZone></div>
-<div class="menu-drawer" #menuDrawer>
-
-    <div class="menu-logo"  #menuLogo>
-        <img ngSrc="/icons/miro.svg" width="20" height="20" priority>
-    </div>
-
-    <div class="menu-items" #menuItems>
-        <div class="menu-item" #menuItem>
-            <a routerLink="/">Sobre</a>
+<div class="menu-alinhamento">
+    <div class="menu-drop-zone"  #menuDropZone></div>
+    <div class="menu-drawer" #menuDrawer>
+    
+        <div class="menu-logo"  #menuLogo>
+            <img ngSrc="/icons/miro.svg" width="20" height="20" priority>
         </div>
-
-        <div class="menu-item" #menuItem>
-            <a routerLink="/">Projetos</a>
+    
+        <div class="menu-items" #menuItems>
+            <div class="menu-item" #menuItem>
+                <a routerLink="/">Sobre</a>
+            </div>
+    
+            <div class="menu-item" #menuItem>
+                <a routerLink="/">Projetos</a>
+            </div>
+    
+            <div class="menu-item" #menuItem>
+                <a routerLink="/">Contato</a>
+            </div>
         </div>
-
-        <div class="menu-item" #menuItem>
-            <a routerLink="/">Contato</a>
+    
+        <div class="menu-toggler"  #menuToggler (click)="toggleMenu()">
+            <span></span>
+            <span></span>
         </div>
-    </div>
-
-    <div class="menu-toggler"  #menuToggler (click)="toggleMenu()">
-        <span></span>
-        <span></span>
     </div>
 </div>

@@ -29,18 +29,9 @@
 
 body {
     overflow-x: hidden; // não transborde
-}
-
-header {
-  font-family: 'Instrument Serif';
-
-  height: 680px;
-
-  display: flex;
-  align-items: center;
-  // flex-direction: column; // para ficar um embaixo do outro
-  // justify-content: center;
-
-  background-color: #f4f5f4;
-  // background-color: beige;
+    
+//   width: 100%; 
+//   max-width: 1200px; /* ...até chegar em 1200px. Depois disso, ele para de crescer. */
+//   margin: 0 auto; /* Pega o espaço que sobrar depois dos 1200px e centraliza a caixa! */
+//   padding: 0 20px; /* Um respiro lateral para não colar na borda em telas menores */ 
 }

@@ -1,26 +1,47 @@
+header {
+    font-family: 'Instrument Serif';
+    height: 680px;
+    background-color: #f4f5f4;
+}
+
+.container-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    //justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto; 
+    padding: 0 40px;
+    //padding: 0 50px;
+    // background-color: beige;
+}
+
 .header-home {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px;
 
-  margin-left: 8rem;
+    h1 {
+        font-size: 14vh;
+        font-size: 8rem;
+        // font-size: 14vw; // para celular
+        line-height: 1; /* Deixa as linhas do título mais juntas */
+    }
 
-  h1 {
-    width: 500px;
-    font-size: 14vh;
-    // font-size: 14vw; // para celular
-  }
-
-  p {
-    font-size: 3vh;
-  }
+    p {
+        font-size: 3vh;
+    }
 }
 
 .card-info {
-  font-family: 'Poppins', serif;
-  position: relative;
-  width: 320px; 
-  min-width: 320px; // Proíbe o cartão de encolher
-  margin: 50px auto;
+    font-family: 'Poppins', serif;
+    position: relative;
+    width: 320px; 
+    min-width: 320px; // Proíbe o cartão de encolher
+    margin: 0;
+    margin: 50px; // adicionei
 }
 
 /* Estilo Base dos Selos (Badges) */
@@ -139,13 +160,25 @@
 }
 
 /* Responsividade básica para telas muito pequenas */
-@media (max-width: 480px) {
-  .selo-left {
-    left: -20px;
-    font-size: 0.9rem;
-  }
-  .selo-right {
-    right: -20px;
-    font-size: 0.9rem;
-  }
+@media (max-width: 880px) {
+
+    .container-principal {
+        flex-direction: column; /* Muda de "lado a lado" para "um embaixo do outro" */
+        text-align: center; /* Centraliza o texto para ficar mais bonito no celular */
+        gap: 50px; /* Diminui o espaço entre o texto e o cartão */
+    }
+
+    .secao-texto h1 {
+        font-size: 2rem;
+    }
+
+    .selo-left {
+        left: -20px;
+        font-size: 0.9rem;
+    }
+
+    .selo-right {
+        right: -20px;
+        font-size: 0.9rem;
+    }
 }
