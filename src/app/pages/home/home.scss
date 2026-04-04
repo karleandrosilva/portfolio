@@ -1,56 +1,52 @@
 header {
-    font-family: "Instrument Serif";
+  font-family: 'Instrument Serif';
 
-    height: 680px;
+  height: 680px;
 
-    display: flex;
-    align-items: center;
-    // flex-direction: column; para ficar um embaixo do outro
-    // justify-content: center;
-    background-color: #f4f5f5;
-    // background-color: beige;
+  display: flex;
+  align-items: center;
+  // flex-direction: column; // para ficar um embaixo do outro
+  // justify-content: center;
+  background-color: #f4f5f5;
+  // background-color: beige;
 }
 
 main {
-    
-    color: beige;
+  color: beige;
 }
 
 .header-home {
+  display: flex;
+  flex-direction: column;
 
-    display: flex;
-    flex-direction: column;
+  margin-left: 8rem;
 
-    margin-left: 8rem;
+  h1 {
+    width: 500px;
+    font-size: 14vh;
+    // font-size: 14vw; // para celular
+  }
 
-    h1 {
-        width: 500px;
-        font-size: 14vh;
-        // font-size: 14vw; // para celular
-    }
-
-    p {
-        font-size: 3vh;  
-    }
-
+  p {
+    font-size: 3vh;
+  }
 }
 
-
-.card-wrapper {
+.card-info {
   font-family: 'Poppins', serif;
   position: relative;
-  width: 320px;       /* Define a largura exata */
-  min-width: 320px;   /* Proíbe o cartão de encolher */
+  width: 320px; 
+  min-width: 320px; // Proíbe o cartão de encolher
   margin: 50px auto;
 }
 
 /* Estilo Base dos Selos (Badges) */
-.badge {
+.selos {
   position: absolute;
 
-  background: rgba(188, 186, 186, 0.35); 
-  backdrop-filter: blur(10px); 
-  -webkit-backdrop-filter: blur(10px); /* Garante que funcione no Safari*/
+  background: rgba(188, 186, 186, 0.35);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); // garante que funcione no Safari
 
   padding: 12px 24px;
   border-radius: 30px;
@@ -59,22 +55,22 @@ main {
   color: #222;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
   z-index: 10;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
-.badge-left {
+.selo-left {
   top: 50%;
-  left: -50px; /* Reduzido para não vazar tanto */
+  left: -50px; // reduzi para não vazar tanto
   transform: translateY(-50%);
 }
 
-.badge-right {
+.selo-right {
   top: 15%;
   right: -50px;
 }
 
 /* Estilo do Cartão Principal */
-.profile-card {
+.card-perfil {
   background-color: #ffffff;
   border-radius: 24px;
   padding: 24px;
@@ -83,26 +79,26 @@ main {
   z-index: 1;
 }
 
-.image-container {
+.card-img {
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
   height: 320px;
 }
 
-.profile-image {
+.foto-perfil {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
 }
 
-.card-content {
+.conteudo-card {
   padding: 16px 8px 8px 8px;
 }
 
-.name {
-  font-size: 1.50rem;
+.nome {
+  font-size: 1.5rem;
   font-weight: 600;
   color: #1a1a1a;
   display: flex;
@@ -112,7 +108,7 @@ main {
 }
 
 .pronome {
-  font-size: 1.10rem;
+  font-size: 1.1rem;
   font-weight: 400;
   color: #b0b0b0;
 }
@@ -126,7 +122,7 @@ main {
   margin-bottom: 10px;
 }
 
-.info-row.location {
+.info-row.localizacao {
   color: #444;
   font-weight: 600;
   align-items: center;
@@ -137,36 +133,35 @@ main {
   align-items: center;
   gap: 8px;
   margin-top: 10px;
+
+  svg {
+    transition: fill 0.3s ease;
+  }
+
+  a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
 }
 
-.info-row.linkedin svg {
-  transition: fill 0.3s ease;
-}
-
-.info-row.linkedin a {
-  color: #a0a0a0;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-/* Efeito Hover: Muda o ícone e o texto juntos */
 .info-row.linkedin:hover svg {
-  fill: #0077b5; /* Azul LinkedIn */
+    fill: #0077b5; /* Azul LinkedIn */
 }
 
 .info-row.linkedin:hover a {
-  color: #0077b5;
-  text-decoration: underline;
+    color: #0077b5;
+    text-decoration: none;
 }
 
 /* Responsividade básica para telas muito pequenas */
 @media (max-width: 480px) {
-  .badge-left {
+  .selo-left {
     left: -20px;
     font-size: 0.9rem;
   }
-  .badge-right {
+  .selo-right {
     right: -20px;
     font-size: 0.9rem;
   }
