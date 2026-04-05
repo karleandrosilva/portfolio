@@ -1,6 +1,6 @@
 header {
     font-family: 'Instrument Serif';
-    height: 680px;
+    height: 800px;
     background-color: #f4f5f4;
 }
 
@@ -12,7 +12,7 @@ header {
     //justify-content: center;
     max-width: 1100px;
     margin: 0 auto; 
-    padding: 0 40px;
+    padding: 40px 40px;
     //padding: 0 50px;
     // background-color: beige;
 }
@@ -21,7 +21,7 @@ header {
     display: flex;
     flex-direction: column;
     flex: 1;
-    max-width: 300px;
+    max-width: 400px;
 
     h1 {
         font-size: 14vh;
@@ -35,13 +35,36 @@ header {
     }
 }
 
+.mao-acenando {
+  width: 55px;
+  height: auto;
+  vertical-align: middle; // Alinha a mão com o centro do texto "Oi!"
+  
+  margin-bottom: 10px; 
+  
+  transform-origin: 70% 70%;
+  animation: mao-animacao 2.5s infinite;
+  display: inline-block;
+}
+
+@keyframes mao-animacao {
+  0% { transform: rotate( 0.0deg); }
+  10% { transform: rotate(14.0deg); }
+  20% { transform: rotate(-8.0deg); }
+  30% { transform: rotate(14.0deg); }
+  40% { transform: rotate(-4.0deg); }
+  50% { transform: rotate(10.0deg); }
+  60% { transform: rotate( 0.0deg); }
+  100% { transform: rotate( 0.0deg); }
+}
+
 .card-info {
     font-family: 'Poppins', serif;
     position: relative;
     width: 320px; 
     min-width: 320px; // Proíbe o cartão de encolher
     margin: 0;
-    margin: 50px; // adicionei
+    margin: 80px 50px 0px 0px; // adicionei (mudar na responsividade)
 }
 
 /* Estilo Base dos Selos (Badges) */
