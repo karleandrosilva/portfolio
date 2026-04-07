@@ -1,36 +1,49 @@
-<section class="desk">
+<section class="desk" #desk>
 
-    <div class="header">
+    <div class="header" #header>
         <h2>Sobre mim</h2>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde maiores aut nostrum amet sapiente perspiciatis architecto at esse, aliquam natus mollitia neque molestias quod quibusdam aspernatur aliquid ab eum qui!</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde maiores aut nostrum amet sapiente perspiciatis
+            architecto at esse, aliquam natus mollitia neque molestias quod quibusdam aspernatur aliquid ab eum qui!</p>
     </div>
 
-    <div class="item" id=""><img ngSrc="/icons/cd.png" alt="" width="503" height="494"></div>
-    <div class="item" id=""><img ngSrc="/icons/caderno.png" alt="" width="845" height="629"></div>
-    <div class="item" id=""><img ngSrc="/icons/cafe.png" alt="" width="368" height="281"></div>
-    <div class="item" id=""><img ngSrc="/icons/caneta.png" alt="" width="111" height="599"></div>
-    <div class="item" id=""><img ngSrc="/icons/error.png" alt="" width="604" height="325"></div>
-    <div class="item" id=""><img ngSrc="/icons/ferramentas.png" alt="" width="282" height="1013"></div>
-    <div class="item" id=""><img ngSrc="/icons/folha.png" alt="" width="586" height="364"></div>
-    <div class="item" id=""><img ngSrc="/icons/fone.png" alt="" width="480" height="578"></div>
-    <div class="item" id=""><img ngSrc="/icons/pasta.png" alt="" width="203" height="203"></div>
-    <div class="item" id=""><img ngSrc="/icons/ps.png" alt="" width="230" height="229"></div>
-    <div class="item" id=""><img ngSrc="/icons/tenis.png" alt="" width="545" height="282"></div>
-    <div class="item" id=""><img ngSrc="/icons/vs.png" alt="" width="189" height="189"></div>
+    <div class="item" id="cd"><img ngSrc="/icons/cd.png" alt="" width="503" height="494"></div>
+
+    <div class="item" id="caderno"><img ngSrc="/icons/caderno.png" alt="" width="845" height="629"></div>
+
+    <div class="item" id="cafe"><img ngSrc="/icons/cafe.png" alt="" width="368" height="281"></div>
+
+    <div class="item" id="caneta"><img ngSrc="/icons/caneta.png" alt="" width="111" height="599"></div>
+
+    <div class="item" id="error"><img ngSrc="/icons/error.png" alt="" width="604" height="325"></div>
+
+    <div class="item" id="ferramentas"><img ngSrc="/icons/ferramentas.png" alt="" width="282" height="1013"></div>
+
+    <div class="item" id="folha"><img ngSrc="/icons/folha.png" alt="" width="586" height="364"></div>
+
+    <div class="item" id="fone"><img ngSrc="/icons/fone.png" alt="" width="480" height="578"></div>
+
+    <div class="item" id="pasta"><img ngSrc="/icons/pasta.png" alt="" width="203" height="203"></div>
+
+    <div class="item" id="ps"><img ngSrc="/icons/ps.png" alt="" width="230" height="229"></div>
+
+    <div class="item" id="tenis"><img ngSrc="/icons/tenis.png" alt="" width="545" height="282"></div>
+
+    <div class="item" id="vs"><img ngSrc="/icons/vs.png" alt="" width="189" height="189"></div>
+
 
     <div class="modos">
-        <button class="active" data-mode="chaos">
-           <!-- <img ngSrc="" alt=""> -->
+        <button [class.active]="activeMode === 'chaos'" (click)="switchMode('chaos')">
+            <ion-icon name="flash-outline"></ion-icon>
         </button>
 
-        <button data-mode="cleanup">
-           <!-- <img ngSrc="" alt=""> -->
+        <button [class.active]="activeMode === 'cleanup'" (click)="switchMode('cleanup')">
+            <ion-icon name="grid-outline"></ion-icon>
         </button>
-
-        <button data-mode="notebook">
-           <!-- <img ngSrc="" alt=""> -->
+        
+        <button [class.active]="activeMode === 'notebook'" (click)="switchMode('notebook')">
+            <ion-icon name="book-outline"></ion-icon>
         </button>
-    </div>
+  </div>
 
 </section>
