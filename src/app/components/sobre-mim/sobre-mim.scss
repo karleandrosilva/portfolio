@@ -10,8 +10,10 @@ img {
     height: 100svh;
     max-width: 1400px;
     margin: 0 auto;
-    
+    // background-color: aqua;
+    overflow: visible !important;
 }
+
 
 .header {
     position: absolute;
@@ -30,18 +32,22 @@ img {
   font-weight: 600;
   letter-spacing: -0.02rem;
   line-height: 1;
-  color: #5f5f5f;
+  color: #000000;
 }
 
 .header p {
-  font-size: 0.95rem;
-  line-height: 1.75;
-  color: #5f5f5f;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  color: #000000;
+  font-weight: 500;
 }
 
 .item {
   position: absolute;
   will-change: top, left, transform;
+  // top: 0;
+  // left: 0;
 }
 
 .modos {
@@ -51,7 +57,6 @@ img {
   transform: translateX(-50%);
   display: flex;
 
-  /* ADICIONE ISSO AQUI: */
   pointer-events: auto !important; 
   z-index: 99; /* Garante que fique na frente de tudo */
 
@@ -76,7 +81,6 @@ img {
   pointer-events: auto;
 
   margin: 3px;
-
 }
 
 .modos button:active {
@@ -107,5 +111,9 @@ img {
 
   .item {
     filter: saturate(0);
+  }
+
+  .header p {
+    font-size: 1rem;
   }
 }

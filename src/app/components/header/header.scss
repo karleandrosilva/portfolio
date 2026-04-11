@@ -191,6 +191,26 @@ header {
         gap: 50px; /* Diminui o espaço entre o texto e o cartão */
     }
 
+    header {
+      height: 900px;
+    }
+
+    .header-home {
+      padding-top: 70px;
+      
+      h1 { 
+        font-size: 14vw;   
+      }
+
+      p {
+          font-size: 5vw;
+      }
+    }
+
+    .mao-acenando {
+      width: 45px;
+    }
+
     .secao-texto h1 {
         font-size: 2rem;
     }
@@ -203,5 +223,11 @@ header {
     .selo-right {
         right: -20px;
         font-size: 0.9rem;
+    }
+
+    .card-info {
+      width: 290px; 
+      min-width: 290px; 
+      margin: 0;
     }
 }
