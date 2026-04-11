@@ -24,19 +24,18 @@ header {
     max-width: 400px;
 
     h1 {
-        font-size: 14vh;
-        font-size: 8rem;
-        // font-size: 14vw; // para celular
+        font-size: clamp(5rem, calc(9vw + 1rem), 10rem);
         line-height: 1; /* Deixa as linhas do título mais juntas */
     }
 
     p {
-        font-size: 3vh;
+        padding-top: 20px;
+        font-size: clamp(1rem, calc(2vw + 1rem), 2rem);
     }
 }
 
 .mao-acenando {
-  width: 55px;
+  width: 75px;
   height: auto;
   vertical-align: middle; // Alinha a mão com o centro do texto "Oi!"
   
@@ -182,9 +181,8 @@ header {
     text-decoration: none;
 }
 
-/* Responsividade básica para telas muito pequenas */
-@media (max-width: 880px) {
 
+@media (max-width: 980px) {
     .container-principal {
         flex-direction: column; /* Muda de "lado a lado" para "um embaixo do outro" */
         text-align: center; /* Centraliza o texto para ficar mais bonito no celular */
@@ -193,18 +191,6 @@ header {
 
     header {
       height: 900px;
-    }
-
-    .header-home {
-      padding-top: 70px;
-      
-      h1 { 
-        font-size: 14vw;   
-      }
-
-      p {
-          font-size: 5vw;
-      }
     }
 
     .mao-acenando {
@@ -230,4 +216,33 @@ header {
       min-width: 290px; 
       margin: 0;
     }
+}
+
+@media (max-width: 880px) {
+
+  header {
+    height: 990px;
+  }
+
+  .header-home {
+    padding-top: 70px;
+  }
+
+  .card-info {
+      width: 280px; 
+      min-width: 280px; 
+      margin: 0;
+  }
+
+  .mao-acenando {
+      width: 55px;
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .mao-acenando {
+      width: 45px;
+  }
 }

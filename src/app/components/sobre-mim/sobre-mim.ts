@@ -21,7 +21,7 @@ export class SobreMim implements OnInit, AfterViewInit {
   activeMode = 'chaos';
   
   // Seus dados de tamanhos e layouts (mantive igual ao seu JS)
-  itemSizes: any = { cd: 400, caderno: 375, cafe: 225, caneta: 125, error: 300, ferramentas: 250, folha: 375, fone: 275, pasta: 150, ps: 100, tenis: 250, vs: 100 };
+  itemSizes: any = { cd: 400, caderno: 375, cafe: 225, caneta: 125, error: 300, ferramentas: 250, musica: 375, fone: 275, pasta: 150, ps: 100, tenis: 250, vs: 100 };
 
   arrangements: any = {
     chaos: {
@@ -33,8 +33,8 @@ export class SobreMim implements OnInit, AfterViewInit {
         { id: "caneta", x: 72.5, y: 75, rotation: 0 },
         { id: "error", x: 80, y: 60, rotation: 15 },
         { id: "ferramentas", x: 9.5, y: 55, rotation: 15 },
-        { id: "folha", x: -2.5, y: -2.5, rotation: -15 }, 
-        { id: "fone", x: 5, y: 20, rotation: 10 },
+        { id: "musica", x: -2.5, y: -6.5, rotation: -10 }, 
+        { id: "fone", x: 8, y: 20, rotation: 10 },
         { id: "pasta", x: 90, y: 50, rotation: 5 },
         { id: "ps", x: 20, y: 15, rotation: 5 },
         { id: "tenis", x: -2.5, y: 65, rotation: -35 },
@@ -42,7 +42,7 @@ export class SobreMim implements OnInit, AfterViewInit {
       ],
     },
     cleanup: {
-      header: { x: 70, y: 37.5, center: false },
+      header: { x: 60, y: 37.5, center: false },
       items: [
         { id: "cd", x: 0, y: 47.5, rotation: 0 },
         { id: "caderno", x: 36.5, y: 5.5, rotation: 0 },
@@ -50,8 +50,8 @@ export class SobreMim implements OnInit, AfterViewInit {
         { id: "caneta", x: 63.5, y: 23, rotation: 0 },
         { id: "error", x: 34.5, y: 59, rotation: 0 },
         { id: "ferramentas", x: 15, y: 60, rotation: 0 },
-        { id: "folha", x: 9, y: -3.5, rotation: 0 },
-        { id: "fone", x: 76.5, y: -5, rotation: 0 },
+        { id: "musica", x: 9, y: -3.5, rotation: 0 },
+        { id: "fone", x: 76.5, y: -1, rotation: 0 },
         { id: "pasta", x: 24.5, y: 33, rotation: 0 },
         { id: "ps", x: 64.5, y: 6, rotation: 0 },
         { id: "tenis", x: 60, y: 65.5, rotation: 0 },
@@ -67,12 +67,12 @@ export class SobreMim implements OnInit, AfterViewInit {
         { id: "caneta", x: 75, y: 35, rotation: 0 },
         { id: "error", x: 30, y: 57.5, rotation: 10 },
         { id: "ferramentas", x: 50, y: 50, rotation: -5 },
-        { id: "folha", x: 10, y: 10, rotation: -30 },
+        { id: "musica", x: 10, y: 10, rotation: -30 },
         { id: "fone", x: 45, y: 0.5, rotation: 20 },
         { id: "pasta", x: 25, y: 40, rotation: 10 },
         { id: "ps", x: 65, y: 70, rotation: 25 },
         { id: "tenis", x: 16.5, y: 50, rotation: -20 },
-        { id: "vs", x: 80, y: 80, rotation: 0 }, 
+        { id: "vs", x: 50, y: 70, rotation: 0 }, 
       ],
     }
   };

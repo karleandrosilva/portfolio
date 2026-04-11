@@ -37,7 +37,7 @@ img {
 
 .header p {
   font-family: "Poppins", sans-serif;
-  font-size: 1.2rem;
+  font-size: clamp(0.5rem, calc(2vw + 1rem), 1.1rem);
   line-height: 1.55;
   color: #000000;
   font-weight: 500;
@@ -109,11 +109,7 @@ img {
     background-color: rgba(245, 242, 237, 0.5);
   }
 
-  .item {
-    filter: saturate(0);
-  }
-
-  .header p {
-    font-size: 1rem;
+  .header {
+    width: 300px
   }
 }
