@@ -21,14 +21,14 @@ export class SobreMim implements OnInit, AfterViewInit {
   activeMode = 'chaos';
   
   // Seus dados de tamanhos e layouts (mantive igual ao seu JS)
-  itemSizes: any = { cd: 400, caderno: 375, cafe: 225, caneta: 125, error: 300, ferramentas: 250, musica: 375, fone: 275, pasta: 150, ps: 100, tenis: 250, vs: 100 };
+  itemSizes: any = { cd: 400, caderno: 375, cafe: 225, caneta: 125, error: 300, ferramentas: 250, musica: 375, fone: 275, pasta: 150, ps: 100, tenis: 250, vs: 100, infancia: 300};
 
   arrangements: any = {
     chaos: {
       header: { x: 50, y: 47.5, center: true },
       items: [
         { id: "cd", x: 72.5, y: 5, rotation: 0 },
-        { id: "caderno", x: 65, y: 20, rotation: -5 },
+        { id: "caderno", x: 65, y: 30, rotation: -5 },
         { id: "cafe", x: 2.5, y: 45, rotation: -10 },
         { id: "caneta", x: 72.5, y: 75, rotation: 0 },
         { id: "error", x: 80, y: 60, rotation: 15 },
@@ -39,13 +39,14 @@ export class SobreMim implements OnInit, AfterViewInit {
         { id: "ps", x: 20, y: 15, rotation: 5 },
         { id: "tenis", x: -2.5, y: 65, rotation: -35 },
         { id: "vs", x: 65, y: 80, rotation: 10 }, 
+        { id: "infancia", x: 65, y: 3, rotation: 10 },
       ],
     },
     cleanup: {
       header: { x: 60, y: 37.5, center: false },
       items: [
         { id: "cd", x: 0, y: 47.5, rotation: 0 },
-        { id: "caderno", x: 36.5, y: 5.5, rotation: 0 },
+        { id: "caderno", x: 80, y: 30.5, rotation: 0 },
         { id: "cafe", x: -6, y: 3.5, rotation: 0 },
         { id: "caneta", x: 63.5, y: 23, rotation: 0 },
         { id: "error", x: 34.5, y: 59, rotation: 0 },
@@ -56,6 +57,7 @@ export class SobreMim implements OnInit, AfterViewInit {
         { id: "ps", x: 64.5, y: 6, rotation: 0 },
         { id: "tenis", x: 60, y: 65.5, rotation: 0 },
         { id: "vs",x: 82.5, y: 80, rotation: 0 }, 
+        { id: "infancia", x: 36.5, y: 5.5, rotation: 0 },
       ],
     },
     notebook: {
@@ -73,6 +75,7 @@ export class SobreMim implements OnInit, AfterViewInit {
         { id: "ps", x: 65, y: 70, rotation: 25 },
         { id: "tenis", x: 16.5, y: 50, rotation: -20 },
         { id: "vs", x: 50, y: 70, rotation: 0 }, 
+        { id: "infancia", x: 60, y: 5.5, rotation: -10 },
       ],
     }
   };
